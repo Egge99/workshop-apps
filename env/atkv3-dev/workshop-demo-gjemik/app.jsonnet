@@ -17,7 +17,7 @@ local readinessProbe = application.probe(
   initialDelay=0,
 );
 
-local image = 'ghcr.io/kartverket/gjemik-skip-demo:latest';
+local image = 'ghcr.io/kartverket/gjemik-skip-demo:sha-e39e4df92ef89e90462f493bb9e93e998201df8c';
 
 application.new('gjemik-skip-demo', image, 8080)
 + application.withRoutingProvider('Standard')
