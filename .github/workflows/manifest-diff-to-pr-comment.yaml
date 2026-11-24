@@ -7,7 +7,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: kartverket/github-workflows/.github/workflows/manifest-diff-to-pr-comment.yaml@latest
+    uses: kartverket/github-workflows/.github/workflows/manifest-diff-to-pr-comment.yaml@17f2ec02676e584a2d1a7c50e330f96395e2c351
     with:
       path: env # diff files in the env/ directory
       ref: origin/main # diff PR branch against origin/main
