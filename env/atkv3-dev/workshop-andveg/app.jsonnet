@@ -17,7 +17,7 @@ local readinessProbe = application.probe(
   initialDelay=0,
 );
 
-local image = 'ghcr.io/kartverket/vegar-skip-demo:sha-7dec737bb3d138419a77e228ce9d4d57def4fc4a';
+local image = 'ghcr.io/kartverket/vegar-skip-demo:latest';
 
 application.new('vegar-skip-demo', image, 8080)
 + application.withRoutingProvider('Standard')
