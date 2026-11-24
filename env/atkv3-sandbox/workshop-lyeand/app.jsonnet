@@ -23,7 +23,7 @@ application.new('spider-man', image, 8080)
 + application.withRoutingProvider('Standard')
 // Placeholder: <app>.<cluster>.kartverket-intern.cloud er kun tilgjengelig internt.
 // Domener under kartverket.cloud åpnes mot internett (se sjekkliste før internetteksponering).
-+ application.forHostnames('spider-man.atkv3-dev.kartverket-intern.cloud')
++ application.forHostnames('spider-man.atkv3-sandbox.kartverket-intern.cloud')
 + application.withReplicas(
   initial=2,
   max=5,
