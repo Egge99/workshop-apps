@@ -17,7 +17,7 @@ local readinessProbe = application.probe(
   initialDelay=0,
 );
 
-local image = 'ghcr.io/kartverket/skip-demo-amunds1:latest';
+local image = 'ghcr.io/kartverket/skip-demo-amunds1:sha-7dec737bb3d138419a77e228ce9d4d57def4fc4a';
 
 application.new('skip-demo-amunds1', image, 8080)
 + application.withRoutingProvider('Standard')
